@@ -1,0 +1,41 @@
+* {
+  border: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  max-width: 100vw;
+  min-height: calc(82rem / 16);
+  background-color: var(--nav-color);
+  justify-content: center;
+  align-items: center;
+  gap: calc(256rem / 16);
+ 
+}
+
+header nav ol {
+  font-family: "Plus Jakarta Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(71rem / 16);
+  list-style: none;
+  li a {
+    text-decoration: none;
+    font-size: calc(15rem / 16);
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  button{
+    
+    border-radius: 20px;
+  }
+
+  a:hover {
+    cursor: url("./cursor/Move.cur"), auto;
+    text-decoration: overline;
+    color:var(--blue-gradient)
+  }
+}

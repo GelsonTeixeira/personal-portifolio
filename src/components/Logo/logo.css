@@ -1,0 +1,6 @@
+img {
+  margin-top: 10px;
+}
+img:hover{
+    cursor: url("./cursor/Move.cur"), auto;
+  }
