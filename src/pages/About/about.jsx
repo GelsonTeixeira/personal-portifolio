@@ -1,11 +1,12 @@
 import './about.css'
+import ImageAboutMe from '../../assets/image-about-me.jpg'
 function About() {
   return(
     <div id="container-content-about">
       <div ><p className='about_me' >About me</p></div>
       <div className="container-boxes">
       <div className="container_img_about">
-        <img src="./Images/image-about-me.jpg" alt="" />
+        <img src={ImageAboutMe} alt="Image About Me" />
       </div>
       <div className="container_texts">
         <h1>Curious about me? Here you have it:</h1>

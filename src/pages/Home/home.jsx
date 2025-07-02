@@ -1,11 +1,18 @@
 import "./home.css";
+import FotoPerfil from '../../assets/image-perfil.png'
 import { useNavigate } from "react-router-dom";
+import JavaScriptLogo from '../../assets/javascript-light.png';
+import NodeJsLogo  from '../../assets/nodejs-light.png'
+import HtmlLogo from '../../assets/html-light.png';
+import LogoCss from '../../assets/css-light.png';
+import ReactLogo from '../../assets/reactjs-light.png';
+
 
 function Home() {
     const navigate = useNavigate()
     const handleDownload = () => {
       const link = document.createElement('a');
-      link.href = '/Arquivos/curriculo-gelson-andrade.png'; 
+      link.href = '/assets/curriculo-gelson-andrade.png'; 
       link.download = 'curriculo-gelson-andrade.png';  
       link.click();
     };
@@ -13,7 +20,7 @@ function Home() {
     <main>
       <div id="container-content">
         <div className="container_img_perfil">
-        <img src="/Images/image-perfil.png" alt="foto-perfil" />
+        <img src={FotoPerfil} alt="foto-perfil" />
         </div>
         
         <h2>My name is Gelson and I'm a <strong>programmer</strong></h2>
@@ -26,11 +33,11 @@ function Home() {
           </div>
           <h3>EXPERIENCE WITH</h3>
           <div className="container_img_tecks">
-            <img src='./Logos/javascript-light.png' alt="Logo Javacript" />
-            <img src='./Logos/nodejs-light.png' alt="Logo Nodejs" />
-            <img src='./Logos/html-light.png' alt="Logo HTML" />
-            <img src='./Logos/css-light.png' alt="Logo CSS" />
-            <img className="react"  src='./Logos/reactjs-light.png' alt="Logo Reactjs" 
+            <img src={JavaScriptLogo} alt="Logo Javacript" />
+            <img src={NodeJsLogo} alt="Logo Nodejs" />
+            <img src={HtmlLogo} alt="Logo HTML" />
+            <img src={LogoCss} alt="Logo CSS" />
+            <img className="react" src={ReactLogo} alt="Logo Reactjs" 
           
               />
           </div>

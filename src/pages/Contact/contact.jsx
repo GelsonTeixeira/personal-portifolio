@@ -1,10 +1,11 @@
 import './contact.css'
-function Contact(){
- return(
-   <div id="container">
+import ImageProfile from '../../assets/image-perfil.png'
+function Contact() {
+  return (
+    <div id="container">
       <div className="container_content">
         <div className="container_content_img">
-          <img src="/Images/image-perfil.png" alt="Perfil" />
+          <img src={ImageProfile} alt="Perfil" />
         </div>
         <div className="container_content_titulo">
           <h1>Gelson Andrade</h1>
@@ -14,15 +15,13 @@ function Contact(){
           <p>"Front-end developer and avid reader"</p>
         </div>
         <div className="container_content_links">
-          <a href="https://google.com">GitHub</a>
-          <a href="#">Frontend Mentor</a>
-          <a href="#">LinkedIn</a>
-          <a href="https://x.com/GelsonOficialbr">Twitter</a>
+          <a href="https://github.com/GelsonTeixeira">Git Hub</a>
+          <a href="https://br.linkedin.com/in/gelson-teixeira-andrade">LinkedIn</a>
           <a href="https://www.instagram.com/gelson_andrade_/?next=%2Ffilipevalerim%2F">Instagram</a>
         </div>
       </div>
     </div>
- )
+  )
 }
 
 export default Contact

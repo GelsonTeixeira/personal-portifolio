@@ -34,7 +34,7 @@ header nav ol {
   }
 
   a:hover {
-    cursor: url("./cursor/Move.cur"), auto;
+    cursor: url("src/assets/Move.cur"), auto;
     text-decoration: overline;
     color:var(--blue-gradient)
   }

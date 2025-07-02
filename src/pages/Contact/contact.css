@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--blue-gradient);
+   
     min-height: 720px;
     border-radius: 20px;
     padding: 30px;
@@ -52,17 +52,19 @@
     gap: 15px;
     margin-top: 16px;
    
-    color: var(---white);
+
 }
 
 .container_content_titulo h1{
     font-weight: 600;
     text-align: center;
+    color: ;
+
 }
 
 .container_content_titulo p{
    font-size: 14px;
-    color: var(---green);
+    
     text-align: center;
 }
 
@@ -72,7 +74,7 @@
     align-items: center;
     margin-top: 30px;
     font-weight: 300;
-    color: var(---white);
+    
 
     p {
         text-align: center;
@@ -106,6 +108,7 @@
 
 .container_content_links a:hover{
     cursor: pointer;
-    background-color: var(---green);
-    color: var(---Grey-900);
+    background-color: var(--link-color-hover);
+
 }
+
