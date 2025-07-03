@@ -37,11 +37,11 @@ Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresent
 O layout foi pensado para oferecer **excelente experiência visual** tanto em modo claro quanto escuro.
 
 <p align="center">
-    <img src="assets/clear-code.png" alt="Clear Mode" width="300px">
-  <img src="assets/dark-mode.png" alt="Dark Mode" width="300px">
-  <img src="assets/dark-mode.png" alt="Dark Mode" width="300px">
-  <img src="assets/dark-mode.png" alt="Dark Mode" width="300px">
-  <img src="assets/dark-mode.png" alt="Dark Mode" width="300px">
+    <img src="src/assets/assets/clear-code.png" alt="Clear Mode" width="300px">
+  <img src="src/assets/assets/dark-mode.png" alt="Dark Mode" width="300px">
+  <img src="src/assets/assets/dark-mode.png" alt="Dark Mode" width="300px">
+  <img src="src/assets/assets/dark-mode.png" alt="Dark Mode" width="300px">
+  <img src="src/assets/assets/dark-mode.png" alt="Dark Mode" width="300px">
 </p>
 
 > 📱 100% responsivo: adaptado para **celulares, tablets e monitores widescreen**.
