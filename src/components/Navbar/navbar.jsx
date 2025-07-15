@@ -11,7 +11,7 @@ function Navbar({theme, toggleTheme}) {
       <nav>
         <ol>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/personal-portifolio">Home</Link>
           </li>
           <li>
             <Link to="/sobre">About</Link>

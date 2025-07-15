@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/navbar";
 import Home from "./pages/Home/home";
 import About from "./pages/About/about";
 import Contact from "./pages/Contact/contact";
+import Projects from "./pages/Projects/projects";
 import './index.css';
 
 function App() {
@@ -28,9 +29,10 @@ function App() {
     <Router>
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/personal-portifolio" element={<Home />} />
         <Route path="/sobre" element={<About />} />
         <Route path="/contato" element={<Contact />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </Router>
   );

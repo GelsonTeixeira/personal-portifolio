@@ -3,7 +3,7 @@ import './logo.css'
 import logo from "./logo-nome.png"
 function Logo() {
   return (
-    <Link to="/">
+    <Link to="/personal-portifolio">
       <img src={logo} alt="Logo" />
     </Link>
   );
