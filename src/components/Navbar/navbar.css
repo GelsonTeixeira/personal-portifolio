@@ -1,3 +1,4 @@
+
 * {
   border: 0px;
   margin: 0px;
@@ -8,11 +9,16 @@ header {
   display: flex;
   max-width: 100vw;
   min-height: calc(82rem / 16);
-  background-color: var(--nav-color);
+  background-color: var(--background-color);
   justify-content: center;
   align-items: center;
   gap: calc(256rem / 16);
- 
+  position: relative;
+}
+
+
+.menu-toggle {
+  display: none;
 }
 
 header nav ol {
@@ -22,20 +28,87 @@ header nav ol {
   align-items: center;
   gap: calc(71rem / 16);
   list-style: none;
-  li a {
-    text-decoration: none;
-    font-size: calc(15rem / 16);
-    text-decoration: none;
-    color: var(--primary-color);
-  }
-  button{
-    
-    border-radius: 20px;
+}
+
+header nav ol li a,
+header nav ol li button {
+  text-decoration: none;
+  font-size: calc(15rem / 16);
+  color: var(--text-color);
+  white-space: nowrap;
+}
+
+header nav ol li button {
+  border-radius: 100px;
+}
+
+.theme-toggle:hover {
+  cursor: url("../../assets/Mover.svg"), auto;
+}
+
+a:hover {
+  cursor: url("../../assets/Link.svg"), auto;
+  text-decoration: underline;
+  text-decoration-color: var(--text-color);
+}
+
+
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; 
+    align-items: flex-end; 
+    padding: 1rem;
+    gap: 1rem; 
   }
 
-  a:hover {
-    cursor: url("src/assets/Move.cur"), auto;
-    text-decoration: overline;
-    color:var(--blue-gradient)
+
+  header > div:first-child { 
+    width: 100%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    order: -1; 
+  }
+
+  header > div:first-child > .Logo { 
+    margin-left: auto; 
+  }
+
+
+  .menu-toggle {
+    display: block; 
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--text-color);
+    margin-left: auto; 
+  }
+
+  
+  header nav {
+    display: none;
+    width: 100%;
+    margin-top: 1rem;
+    align-self: flex-end; 
+  }
+
+  
+  header nav.open {
+    display: block;
+  }
+
+  header nav ol {
+    flex-direction: column; 
+    width: 100%;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  header nav ol li {
+    width: 100%;
+    text-align: right; /* Alinha o texto dos links à direita */
   }
 }

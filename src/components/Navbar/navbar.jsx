@@ -1,27 +1,39 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import Logo from "../Logo/logo";
 
-function Navbar({theme, toggleTheme}) {
+function Navbar({ theme, toggleTheme }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header>
       <div>
-       <Logo />
+        <Logo theme={theme} />
+      <button className="menu-toggle" onClick={toggleMenu}>
+        ☰
+      </button>
       </div>
-      <nav>
+      <nav className={isMenuOpen ? "open" : ""}>
         <ol>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/personal-portifolio/">Home</Link>
           </li>
           <li>
-            <Link to="/sobre">About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/contato">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
-        <button className="theme-toggle" onClick={toggleTheme}>
-        {theme === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode'}
-      </button>
+          <li>
+            <button className="theme-toggle" onClick={toggleTheme}>
+              {theme === "light" ? "🌙" : "☀️"}
+            </button>
+          </li>
         </ol>
       </nav>
     </header>

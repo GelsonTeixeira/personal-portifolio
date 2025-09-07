@@ -28,9 +28,9 @@ function App() {
     <Router>
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sobre" element={<About />} />
-        <Route path="/contato" element={<Contact />} />
+        <Route path="/personal-portifolio/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

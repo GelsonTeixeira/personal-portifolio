@@ -4,10 +4,17 @@
   --button-bg: #000000;
   --button-text: #ffffff;
   --primary-color: #ffff;
-  --secondary-text: #807676;
+  --secondary-text: #c5c5c5;
   --nav-color: #222222;
   --card-color: #2a2a2a;
-  --link-color-hover: rgb(59, 155, 150);
+  --secondary-color: #8a91a0;
+  --blue-gradient: #5badff;
+  --black-color: #161513;
+  ---green: hsl(75, 94%, 57%);
+  ---white: hsl(0, 0%, 100%);
+  ---grey-700: hsl(0, 0%, 20%);
+  ---grey-800: hsl(0, 0%, 12%);
+  ---Grey-900: hsl(0, 0%, 8%);
 
 }
 * {
@@ -20,12 +27,10 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  /* overflow: hidden; */
 }
 
-
 [data-theme="dark"] {
-  --background-color: #1a1a1a;
+  --background-color: #000000;
   --text-color: #ffffff;
   --button-bg: #ffffff;
   --button-text: #000000;
@@ -86,5 +91,5 @@ p {
 }
 
 body:hover {
-  cursor: url("/src/assets/Link.cur"), auto;
+  cursor: url("/src/assets/Link.svg"), auto;
 }

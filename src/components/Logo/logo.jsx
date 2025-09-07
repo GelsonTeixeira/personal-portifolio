@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import './logo.css'
-import logo from "./logo-nome.png"
-function Logo() {
+import lightLogo from "../../assets/logo-dark.svg"
+import darkLogo from "../../assets/logo-light.svg"
+function Logo({ theme }) {
   return (
-    <Link to="/">
-      <img src={logo} alt="Logo" />
+    <Link to="/personal-portifolio">
+      <img src={theme === 'light' ? lightLogo : darkLogo} alt="Logo" />
     </Link>
   );
 }
