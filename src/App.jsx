@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/navbar";
 import Home from "./pages/Home/home";
 import About from "./pages/About/about";
 import Contact from "./pages/Contact/contact";
+import HireMe from "./pages/HireMe/hireme";
 import './index.css';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/personal-portifolio/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/hireme" element={<HireMe />} />
       </Routes>
     </Router>
   );

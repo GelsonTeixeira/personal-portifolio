@@ -30,6 +30,9 @@ function Navbar({ theme, toggleTheme }) {
             <Link to="/contact">Contact</Link>
           </li>
           <li>
+            <Link to="/hireme">Hire Me</Link>
+          </li>
+          <li>
             <button className="theme-toggle" onClick={toggleTheme}>
               {theme === "light" ? "🌙" : "☀️"}
             </button>

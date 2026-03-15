@@ -29,7 +29,7 @@ function Home() {
        
           <p>I'm Gelson, a programmer passionate about technology and development. Currently, I am improving my programming skills, creating projects and exploring new solutions to digital challenges. I have experience in various technologies and always seek to evolve, learning and applying new ideas to build functional and efficient interfaces.</p>
           <div className="container_buttons">
-            <button onClick={()=> navigate("/contact")}>Get In Touch</button>
+            <button onClick={()=> navigate("/hireme")}>Get In Touch</button>
             <button onClick={handleDownload}>Download CR</button>
           </div>
           <h3>EXPERIENCE WITH</h3>

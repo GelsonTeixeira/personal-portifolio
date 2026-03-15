@@ -1,81 +1,172 @@
+/* ============================
+   About Page — Premium Style
+   ============================ */
 
-
-#container-content-about {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   margin-top: calc(30rem / 16);
-   padding: 0 1rem; 
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px 80px;
+  font-family: 'Poppins', 'Inter', sans-serif;
 }
 
-#container-content-about div .about_me {
-  font-family: Inter;
-  font-size: calc(14rem / 16);
-  background: rgba(64, 153, 153, 0.288);
-  padding: calc(6rem /16) calc(25rem / 16) calc(6rem / 16) calc(25rem / 16);
-  border-radius: calc(30rem / 16) ;
+.about-container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.container-boxes{
-    display: flex;
-    margin-top: calc(40rem / 16);
+/* --- Header --- */
+
+.about-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-.container_img_about{
-    img{
-        max-width: calc(400rem / 16);
-        max-height: calc(480rem / 16);
-        border-radius: calc(30rem / 16);
-        margin-left: calc(10rem / 16);
-    }
-}
-.container_img_about img:hover{
-    cursor: url('../../assets/Mover.svg'), auto;
+.about-badge {
+  font-family: Inter, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: rgba(128, 0, 255, 0.12);
+  color: #9a33ff;
+  padding: 6px 22px;
+  border-radius: 30px;
+  letter-spacing: 0.03em;
 }
 
-.container_texts{
-    font-family: Inter;
-    max-width: calc(444rem / 16);
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin-left: calc(30rem / 16);
-    h1{
-        font-weight: 600;
-    }
-    p{
-        font-weight: 300;
-        font-size: calc(15rem / 16);
-    }
+:root[data-theme='dark'] .about-badge {
+  background: rgba(128, 0, 255, 0.2);
+  color: #c084fc;
 }
+
+.about-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text-color);
+  max-width: 650px;
+}
+
+.gradient-text {
+  background: linear-gradient(116deg, #ff8660 40%, #9a33ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- Card --- */
+
+.about-card {
+  background-color: var(--background-color);
+  border-radius: 20px;
+  padding: 40px 36px;
+  box-shadow:
+    0 0 0 1px rgba(113, 60, 199, 0.15),
+    0 12px 40px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.4s ease;
+  display: flex;
+  gap: 36px;
+  align-items: flex-start;
+}
+
+.about-card:hover {
+  box-shadow:
+    0 0 0 1px rgba(113, 60, 199, 0.3),
+    0 16px 50px rgba(0, 0, 0, 0.35);
+}
+
+:root[data-theme='light'] .about-card {
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.08),
+    0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+:root[data-theme='light'] .about-card:hover {
+  box-shadow:
+    0 0 0 1px rgba(113, 60, 199, 0.25),
+    0 16px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* --- Image --- */
+
+.about-image {
+  flex-shrink: 0;
+}
+
+.about-image img {
+  width: 280px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(128, 0, 255, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 30px rgba(128, 0, 255, 0.3);
+  cursor: url('../../assets/Mover.svg'), auto;
+}
+
+/* --- Texts --- */
+
+.about-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Inter, sans-serif;
+}
+
+.about-texts p {
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--secondary-text);
+}
+
+.about-texts p:first-child {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+/* --- Responsive --- */
 
 @media (max-width: 768px) {
-    .container-boxes {
-        flex-direction: column;
-        align-items: center; 
-        margin-top: 2rem;
-    }
+  .about-page {
+    padding: 40px 16px 60px;
+  }
 
-    .container_img_about img {
-        max-width: 100%;
-        height: auto; 
-        margin-left: 0; 
-        margin-bottom: 2rem; 
-    }
+  .about-title {
+    font-size: 1.8rem;
+  }
 
-    .container_texts {
-        max-width: 100%;
-        margin-left: 0; 
-        padding: 0 1rem; 
-        text-align: center; 
-    }
+  .about-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 22px;
+    gap: 28px;
+  }
 
-    .container_texts h1 {
-        font-size: 1.5rem; 
-    }
+  .about-image img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
 
-    .container_texts p {
-        font-size: 1rem; 
-    }
+  .about-texts {
+    text-align: center;
+  }
+
+  .about-texts p {
+    font-size: 0.9rem;
+  }
 }
