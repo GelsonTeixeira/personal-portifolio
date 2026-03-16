@@ -49,15 +49,6 @@ button {
   padding: 10px 20px;
   cursor: pointer;
 }
-[data-theme="light"] .container_img_tecks{
-    background-color: #000000;
-    max-width: calc(476rem / 16);
-    padding: 10px;
-    margin: calc(39rem / 16);;
-    border-radius: 13px;
-    box-shadow: 8px 8px 15px rgba(113, 60, 199, 0.5);
-}
-
 [data-theme="light"] .container_content{
   background-color: #000000;
   color: #c5c5c5;
@@ -66,19 +57,13 @@ button {
   background-color: white;
   color: black;
 }
-[data-theme="dark"]
-
 
 [data-theme="light"] .container_img_tecks img{
-    filter: none
-    
-
-    
+    filter: none;
   }
   
-  [data-theme="dark"] .container_img_tecks img {
-    filter: brightness(0) invert(1); 
-   
+[data-theme="dark"] .container_img_tecks img {
+    filter: none;
   }
 
   

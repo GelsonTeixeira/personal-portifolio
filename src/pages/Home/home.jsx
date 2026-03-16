@@ -1,6 +1,6 @@
 import "./home.css";
-import FotoPerfil from '../../assets/image-perfil.png'
-import Curriculo from '../../assets/curriculo-gelson-andrade.svg'
+import FotoPerfil from '../../assets/image-perfil.jpg'
+import Curriculo from '../../assets/curriculo-gelson-andrade.jpg'
 import { useNavigate } from "react-router-dom";
 import NodeJsLogo  from '../../assets/node-light.svg'
 import HtmlLogo from '../../assets/html-logo.svg';
@@ -14,7 +14,7 @@ function Home() {
     const handleDownload = () => {
       const link = document.createElement('a');
       link.href = Curriculo; 
-      link.download = 'curriculo-gelson-andrade.svg';  
+      link.download = 'curriculo-gelson-andrade.jpg';  
       link.click();
     };
   return (

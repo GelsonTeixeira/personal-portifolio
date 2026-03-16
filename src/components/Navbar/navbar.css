@@ -30,7 +30,19 @@ header nav ol {
   list-style: none;
 }
 
-header nav ol li a,
+header nav ol li a {
+  text-decoration: none;
+  font-size: calc(15rem / 16);
+  color: var(--text-color);
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  background-image: linear-gradient(116deg, #ff8660 71.79%, #9a33ff 95.51%);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 header nav ol li button {
   text-decoration: none;
   font-size: calc(15rem / 16);
@@ -46,10 +58,11 @@ header nav ol li button {
   cursor: url("../../assets/Mover.svg"), auto;
 }
 
-a:hover {
+header nav ol li a:hover {
   cursor: url("../../assets/Link.svg"), auto;
-  text-decoration: underline;
-  text-decoration-color: var(--text-color);
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-size: 100% 100%;
 }
 
 

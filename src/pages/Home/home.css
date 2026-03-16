@@ -38,9 +38,13 @@ main {
   border-radius: 100%;
   width: 180px; 
   height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .container_img_perfil img:hover {
   cursor: url('../../assets/Mover.svg'), auto;
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(154, 51, 255, 0.4);
 }
 #container-content h2 {
   max-width: calc(656rem / 16);
@@ -123,6 +127,7 @@ main {
   .container_img_perfil img {
     width: 120px;
     height: 120px;
+    object-fit: cover;
   }
   .container_buttons {
     flex-direction: column; 
