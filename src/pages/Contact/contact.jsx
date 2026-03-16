@@ -1,6 +1,6 @@
 import './contact.css'
 import ImageProfile from '../../assets/foto-corporativa.png'
-import Curriculo from '../../assets/curriculo-gelson-andrade.svg'
+import Curriculo from '../../assets/curriculo-gelson-andrade.jpg'
 
 import GitHubLogo from '../../assets/github-logo.svg'
 import LinkedInLogo from '../../assets/linkedin-logo.svg'
@@ -37,7 +37,7 @@ function Contact() {
               <img src={GitHubLogo} alt="GitHub" className="logo github" />
               <span>GitHub</span>
             </a>
-            <a href={Curriculo} download className="contact-link">
+            <a href={Curriculo} download="curriculo-gelson-andrade.jpg" className="contact-link">
               <img src={Curriculo} alt="Resume" className="logo resume" />
               <span>Resume</span>
             </a>
