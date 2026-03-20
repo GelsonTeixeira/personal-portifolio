@@ -1,6 +1,5 @@
 import "./home.css";
 import FotoPerfil from '../../assets/image-perfil.jpg'
-import Curriculo from '../../assets/curriculo-gelson-andrade.jpg'
 import { useNavigate } from "react-router-dom";
 import NodeJsLogo  from '../../assets/node-light.svg'
 import HtmlLogo from '../../assets/html-logo.svg';
@@ -11,11 +10,8 @@ import MongoLogo from '../../assets/mongo-logo.svg'
 
 function Home() {
     const navigate = useNavigate()
-    const handleDownload = () => {
-      const link = document.createElement('a');
-      link.href = Curriculo; 
-      link.download = 'curriculo-gelson-andrade.jpg';  
-      link.click();
+    const handleResume = () => {
+      window.open("https://drive.google.com/file/d/12-_NyNBwO34K_Pi-QP-t2x4sXkTlSZSH/view?usp=sharing", "_blank");
     };
   return (
     <main>
@@ -30,7 +26,7 @@ function Home() {
           <p>I'm Gelson, a programmer passionate about technology and development. Currently, I am improving my programming skills, creating projects and exploring new solutions to digital challenges. I have experience in various technologies and always seek to evolve, learning and applying new ideas to build functional and efficient interfaces.</p>
           <div className="container_buttons">
             <button onClick={()=> navigate("/hireme")}>Get In Touch</button>
-            <button onClick={handleDownload}>Download CR</button>
+            <button onClick={handleResume}>Request CR</button>
           </div>
           <h3>EXPERIENCE WITH</h3>
           <div className="container_img_tecks">

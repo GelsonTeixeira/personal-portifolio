@@ -1,7 +1,5 @@
 import './contact.css'
 import ImageProfile from '../../assets/foto-corporativa.png'
-import Curriculo from '../../assets/curriculo-gelson-andrade.jpg'
-
 import GitHubLogo from '../../assets/github-logo.svg'
 import LinkedInLogo from '../../assets/linkedin-logo.svg'
 import InstagramLogo from '../../assets/instagram-logo.svg'
@@ -24,9 +22,9 @@ function Contact() {
         <div className="contact-card">
           <div className="contact-profile">
             <div className="contact-avatar">
-              <img src={ImageProfile} alt="Gelson Andrade" />
+              <img src={ImageProfile} alt="Gelson" />
             </div>
-            <h2 className="contact-name">Gelson Andrade</h2>
+            <h2 className="contact-name">Gelson</h2>
             <p className="contact-bio">
               "Learn more about me by clicking the links"
             </p>
@@ -37,8 +35,8 @@ function Contact() {
               <img src={GitHubLogo} alt="GitHub" className="logo github" />
               <span>GitHub</span>
             </a>
-            <a href={Curriculo} download="curriculo-gelson-andrade.jpg" className="contact-link">
-              <img src={Curriculo} alt="Resume" className="logo resume" />
+            <a href="https://drive.google.com/file/d/12-_NyNBwO34K_Pi-QP-t2x4sXkTlSZSH/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="contact-link">
+              <span className="resume-icon">📄</span>
               <span>Resume</span>
             </a>
             <a href="https://br.linkedin.com/in/gelson-teixeira-andrade" target="_blank" rel="noopener noreferrer" className="contact-link">
