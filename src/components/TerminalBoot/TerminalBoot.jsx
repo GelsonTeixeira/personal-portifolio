@@ -32,7 +32,7 @@ export default function TerminalBoot({ onComplete }) {
           onComplete?.();
         }, 800);
       }
-    }, 160);
+    }, 500);
 
     return () => clearInterval(id);
   }, []);

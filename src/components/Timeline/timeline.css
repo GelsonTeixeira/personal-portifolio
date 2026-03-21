@@ -1,0 +1,449 @@
+/* ── Timeline Page ── */
+.timeline-page {
+  min-height: 100vh;
+  padding: 100px 24px 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: "Inter", "Plus Jakarta Sans", sans-serif;
+}
+
+/* ── Header ── */
+.timeline-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.timeline-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.timeline-title .gradient-text {
+  background: linear-gradient(116deg, #ff8660 71.79%, #9a33ff 95.51%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.timeline-subtitle {
+  color: var(--secondary-color);
+  font-size: 1.05rem;
+  margin-top: 8px;
+}
+
+/* ── Filter Pills ── */
+.timeline-filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.timeline-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--secondary-color);
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.timeline-pill:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+}
+
+.timeline-pill-active {
+  background: linear-gradient(116deg, #ff8660, #9a33ff);
+  color: #fff;
+  border-color: transparent;
+}
+
+.timeline-pill-active:hover {
+  background: linear-gradient(116deg, #ff8660, #9a33ff);
+  color: #fff;
+}
+
+.timeline-pill-icon {
+  display: flex;
+  align-items: center;
+}
+
+.timeline-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.timeline-badge-active {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ── Grid ── */
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* ── Card ── */
+.timeline-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(255, 134, 96, 0.12);
+}
+
+.timeline-card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.timeline-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.timeline-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.timeline-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.78rem;
+}
+
+.timeline-card-network {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.timeline-card-network-instagram {
+  color: #e1306c;
+}
+
+.timeline-card-network-linkedin {
+  color: #0a66c2;
+}
+
+.timeline-card-date {
+  color: var(--secondary-color);
+}
+
+.timeline-card-text {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text-color);
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.timeline-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.timeline-card-tag {
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  border-radius: 12px;
+  background: rgba(154, 51, 255, 0.12);
+  color: #c084fc;
+  font-weight: 500;
+}
+
+.timeline-card-stats {
+  display: flex;
+  gap: 16px;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.timeline-card-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.82rem;
+  color: var(--secondary-color);
+}
+
+/* ── Empty state ── */
+.timeline-empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--secondary-color);
+}
+
+.timeline-empty-icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+/* ── Error banner ── */
+.timeline-error {
+  margin-top: 20px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  background: rgba(255, 134, 96, 0.08);
+  border: 1px solid rgba(255, 134, 96, 0.2);
+  color: #ff8660;
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+/* ── Skeleton ── */
+.timeline-skeleton {
+  pointer-events: none;
+}
+
+.timeline-skeleton-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.timeline-skeleton-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline-skeleton-bar {
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  animation: skeleton-pulse 1.5s ease-in-out infinite;
+}
+
+.skeleton-sm {
+  width: 70px;
+  height: 14px;
+}
+
+.skeleton-md {
+  width: 60%;
+  height: 14px;
+}
+
+.skeleton-lg {
+  width: 100%;
+  height: 14px;
+}
+
+.skeleton-tag {
+  width: 56px;
+  height: 22px;
+  border-radius: 12px;
+}
+
+.timeline-skeleton-tags {
+  display: flex;
+  gap: 6px;
+}
+
+@keyframes skeleton-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+/* ── Light theme adjustments ── */
+[data-theme="light"] .timeline-card {
+  background: rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .timeline-pill {
+  border-color: rgba(0, 0, 0, 0.12);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .timeline-pill:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .timeline-badge {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .timeline-card-tag {
+  background: rgba(154, 51, 255, 0.08);
+  color: #7c3aed;
+}
+
+[data-theme="light"] .timeline-card-stats {
+  border-top-color: rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .timeline-skeleton-bar {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .timeline-card:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Terminal theme adjustments ── */
+[data-theme="terminal"] .timeline-card {
+  background: rgba(0, 255, 65, 0.03);
+  border-color: rgba(0, 255, 65, 0.12);
+}
+
+[data-theme="terminal"] .timeline-card:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.1);
+}
+
+[data-theme="terminal"] .timeline-pill {
+  border-color: rgba(0, 255, 65, 0.2);
+  background: rgba(0, 255, 65, 0.05);
+  color: #00cc33;
+}
+
+[data-theme="terminal"] .timeline-pill:hover {
+  background: rgba(0, 255, 65, 0.1);
+  color: #00ff41;
+}
+
+[data-theme="terminal"] .timeline-pill-active {
+  background: #00ff41;
+  color: #0a0a0a;
+  border-color: transparent;
+}
+
+[data-theme="terminal"] .timeline-card-network-instagram,
+[data-theme="terminal"] .timeline-card-network-linkedin {
+  color: #00ff41;
+}
+
+[data-theme="terminal"] .timeline-card-tag {
+  background: rgba(0, 255, 65, 0.1);
+  color: #00ff41;
+}
+
+[data-theme="terminal"] .timeline-card-stats {
+  border-top-color: rgba(0, 255, 65, 0.1);
+}
+
+[data-theme="terminal"] .timeline-skeleton-bar {
+  background: rgba(0, 255, 65, 0.08);
+}
+
+[data-theme="terminal"] .timeline-error {
+  background: rgba(0, 255, 65, 0.05);
+  border-color: rgba(0, 255, 65, 0.2);
+  color: #00ff41;
+}
+
+/* ── Tablet ── */
+@media (max-width: 1024px) {
+  .timeline-page {
+    max-width: 95%;
+    padding: 80px 20px 50px;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 640px) {
+  .timeline-page {
+    padding: 60px 16px 40px;
+  }
+
+  .timeline-title {
+    font-size: 2.2rem;
+  }
+
+  .timeline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-filters {
+    gap: 8px;
+  }
+
+  .timeline-pill {
+    padding: 6px 14px;
+    font-size: 0.82rem;
+  }
+
+  .timeline-card-text {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 3;
+  }
+}
+
+/* ── Small phones ── */
+@media (max-width: 480px) {
+  .timeline-page {
+    padding: 50px 12px 30px;
+  }
+
+  .timeline-header {
+    margin-bottom: 32px;
+  }
+
+  .timeline-title {
+    font-size: 1.8rem;
+  }
+
+  .timeline-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .timeline-card-body {
+    padding: 14px;
+    gap: 10px;
+  }
+
+  .timeline-card-meta {
+    font-size: 0.72rem;
+  }
+
+  .timeline-card-stat {
+    font-size: 0.75rem;
+  }
+
+  .timeline-pill {
+    padding: 5px 12px;
+    font-size: 0.78rem;
+  }
+}

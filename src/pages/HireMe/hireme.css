@@ -235,6 +235,10 @@
     padding: 40px 16px 60px;
   }
 
+  .hireme-container {
+    max-width: 100%;
+  }
+
   .hireme-title {
     font-size: 2rem;
   }
@@ -255,5 +259,50 @@
   .hireme-submit {
     font-size: 1rem;
     padding: 14px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hireme-page {
+    padding: 30px 12px 50px;
+  }
+
+  .hireme-title {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .hireme-subtitle {
+    font-size: 0.88rem;
+  }
+
+  .hireme-card {
+    padding: 20px 16px;
+    border-radius: 14px;
+  }
+
+  .hireme-card form {
+    gap: 16px;
+  }
+
+  .form-field input,
+  .form-field textarea {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+  }
+
+  .form-field label {
+    font-size: 0.8rem;
+  }
+
+  .form-field textarea {
+    min-height: 120px;
+  }
+
+  .hireme-submit {
+    font-size: 0.95rem;
+    padding: 13px 20px;
+    border-radius: 12px;
   }
 }

@@ -1,0 +1,33 @@
+name: Renovar token do Instagram
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Renovar token
+        id: refresh
+        run: |
+          RESPONSE=$(curl -s "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${{ secrets.INSTAGRAM_TOKEN }}")
+
+          NEW_TOKEN=$(echo $RESPONSE | python3 -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
+
+          if [ -z "$NEW_TOKEN" ]; then
+            echo "Falha ao renovar o token"
+            echo "$RESPONSE"
+            exit 1
+          fi
+
+          echo "new_token=$NEW_TOKEN" >> $GITHUB_OUTPUT
+          echo "Token renovado com sucesso"
+
+      - name: Atualizar secret no GitHub
+        uses: gliech/create-github-secret-action@v1
+        with:
+          name: INSTAGRAM_TOKEN
+          value: ${{ steps.refresh.outputs.new_token }}
+          pa_token: ${{ secrets.GH_PAT }}

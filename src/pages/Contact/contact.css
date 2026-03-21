@@ -212,6 +212,10 @@
     padding: 40px 16px 60px;
   }
 
+  .contact-container {
+    max-width: 100%;
+  }
+
   .contact-title {
     font-size: 2rem;
   }
@@ -241,5 +245,51 @@
   .contact-link img {
     width: 24px;
     height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 30px 12px 50px;
+  }
+
+  .contact-title {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .contact-subtitle {
+    font-size: 0.88rem;
+  }
+
+  .contact-card {
+    padding: 22px 16px;
+    gap: 22px;
+    border-radius: 14px;
+  }
+
+  .contact-avatar img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .contact-name {
+    font-size: 1.15rem;
+  }
+
+  .contact-bio {
+    font-size: 0.85rem;
+  }
+
+  .contact-link {
+    padding: 11px 14px;
+    font-size: 0.88rem;
+    gap: 12px;
+    border-radius: 10px;
+  }
+
+  .contact-link img {
+    width: 22px;
+    height: 22px;
   }
 }

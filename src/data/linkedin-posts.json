@@ -1,0 +1,62 @@
+[
+  {
+    "id": "li-001",
+    "network": "linkedin",
+    "type": "post",
+    "date": "2026-03-15T10:00:00Z",
+    "text": "Acabei de lançar meu portfólio pessoal com React, Vite e Styled Components! Conta com modo claro, escuro e terminal hacker, além de animações 3D com React Three Fiber. Feedback é muito bem-vindo!",
+    "likes": 42,
+    "comments": 8,
+    "image": null,
+    "tags": ["React", "Portfolio", "FrontEnd"],
+    "url": "https://br.linkedin.com/in/gelson-teixeira-andrade"
+  },
+  {
+    "id": "li-002",
+    "network": "linkedin",
+    "type": "post",
+    "date": "2026-02-28T14:30:00Z",
+    "text": "Integrei um chatbot com IA no meu portfólio usando Groq e Llama 3.3! O assistente virtual responde perguntas sobre mim e roda como serverless function na Vercel. A tecnologia é incrível!",
+    "likes": 35,
+    "comments": 6,
+    "image": null,
+    "tags": ["AI", "Chatbot", "Vercel"],
+    "url": "https://br.linkedin.com/in/gelson-teixeira-andrade"
+  },
+  {
+    "id": "li-003",
+    "network": "linkedin",
+    "type": "post",
+    "date": "2026-01-20T09:00:00Z",
+    "text": "Estudando Desenvolvimento de Sistemas no Vale do Rio Pomba (RPV) e cursando Engenharia de Software. Meu primeiro contato com a área foi quando criei meu primeiro website e desde então não parei mais!",
+    "likes": 87,
+    "comments": 14,
+    "image": null,
+    "tags": ["Carreira", "Engenharia de Software", "Estudos"],
+    "url": "https://br.linkedin.com/in/gelson-teixeira-andrade"
+  },
+  {
+    "id": "li-004",
+    "network": "linkedin",
+    "type": "post",
+    "date": "2025-12-10T16:00:00Z",
+    "text": "Explorei React Three Fiber para criar backgrounds 3D interativos no meu portfólio. Partículas flutuantes, símbolos de código e ícones de tecnologias em 3D. A web está cada vez mais imersiva!",
+    "likes": 53,
+    "comments": 9,
+    "image": null,
+    "tags": ["React Three Fiber", "3D", "WebGL"],
+    "url": "https://br.linkedin.com/in/gelson-teixeira-andrade"
+  },
+  {
+    "id": "li-005",
+    "network": "linkedin",
+    "type": "post",
+    "date": "2025-11-05T11:00:00Z",
+    "text": "Completei mais um projeto: deploy automatizado com GitHub Pages e Vercel rodando em paralelo. CI/CD para desenvolvedores front-end é essencial para manter produtividade e qualidade!",
+    "likes": 28,
+    "comments": 4,
+    "image": null,
+    "tags": ["DevOps", "GitHub Pages", "Vercel"],
+    "url": "https://br.linkedin.com/in/gelson-teixeira-andrade"
+  }
+]

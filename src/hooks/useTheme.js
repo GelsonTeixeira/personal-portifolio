@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const STORAGE_KEY = "theme";
-const DEFAULT = "light";
+const DEFAULT = "dark";
 const VALID = ["light", "dark", "terminal"];
 
 export function useTheme() {

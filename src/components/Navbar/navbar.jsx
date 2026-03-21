@@ -34,6 +34,9 @@ function Navbar({ theme, cycleTheme }) {
             <Link to="/hireme">Hire Me</Link>
           </li>
           <li>
+            <Link to="/timeline">Timeline</Link>
+          </li>
+          <li>
             <ThemeToggle theme={theme} onCycle={cycleTheme} />
           </li>
         </ol>

@@ -27,6 +27,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow-x: hidden;
 }
 
 [data-theme="dark"] {
@@ -50,7 +51,7 @@ body {
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  transition: background-color 1ms, color 1ms;
+  transition: background-color 2s ease, color 2s ease;
 }
 
 button {

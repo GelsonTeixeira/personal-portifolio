@@ -11,6 +11,7 @@ import Contact from "./pages/Contact/contact";
 import HireMe from "./pages/HireMe/hireme";
 import ChatBot from "./components/ChatBot/ChatBot";
 import TerminalBoot from "./components/TerminalBoot/TerminalBoot";
+import TimelinePage from "./components/Timeline/TimelinePage";
 import './index.css';
 
 const THEMES = {
@@ -45,6 +46,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/hireme" element={<HireMe />} />
+          <Route path="/timeline" element={<TimelinePage />} />
         </Routes>
         <ChatBot />
       </Router>
