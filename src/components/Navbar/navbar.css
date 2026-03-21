@@ -59,7 +59,8 @@ header nav ol li button {
   cursor: url("../../assets/Mover.svg"), auto;
 }
 
-header nav ol li a:hover {
+header nav ol li a:hover,
+header nav ol li a.active {
   cursor: url("../../assets/Link.svg"), auto;
   color: transparent;
   -webkit-text-fill-color: transparent;
@@ -88,7 +89,9 @@ header nav ol li a:hover {
     align-items: stretch;
     padding: 0.8rem 1.2rem;
     gap: 0;
+    min-height: auto;
     position: relative;
+    background-color: transparent;
   }
 
   header > div:first-child {
@@ -116,6 +119,9 @@ header nav ol li a:hover {
 
   header nav.open {
     display: block;
+    background-color: var(--background-color);
+    border-radius: 12px;
+    margin-top: 4px;
     animation: slideDown 0.25s ease;
   }
 
@@ -146,11 +152,33 @@ header nav ol li a:hover {
     display: block;
     padding: 10px 16px;
     font-size: 0.95rem;
-    transition: background 0.2s ease;
+    background: none !important;
+    background-image: none !important;
+    background-size: unset !important;
+    background-clip: unset !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    color: var(--text-color) !important;
+    transition: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
   }
 
-  header nav ol li a:hover {
-    background: rgba(255, 134, 96, 0.08);
+  header nav ol li a:hover,
+  header nav ol li a:focus {
+    background: none !important;
+    background-image: none !important;
+    -webkit-text-fill-color: unset !important;
+    color: var(--text-color) !important;
+  }
+
+  header nav ol li a:active,
+  header nav ol li a.active {
+    background: linear-gradient(116deg, #ff8660 71.79%, #9a33ff 95.51%) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
   }
 
   header nav ol li:last-child {

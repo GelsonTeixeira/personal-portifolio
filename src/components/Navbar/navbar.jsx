@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./navbar.css";
 import Logo from "../Logo/logo";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
@@ -22,19 +22,19 @@ function Navbar({ theme, cycleTheme }) {
       <nav className={isMenuOpen ? "open" : ""}>
         <ol>
           <li>
-            <Link to="/personal-portifolio/">Home</Link>
+            <NavLink to="/personal-portifolio/">Home</NavLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <NavLink to="/about">About</NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
           <li>
-            <Link to="/hireme">Hire Me</Link>
+            <NavLink to="/hireme">Hire Me</NavLink>
           </li>
           <li>
-            <Link to="/timeline">Timeline</Link>
+            <NavLink to="/timeline">Timeline</NavLink>
           </li>
           <li>
             <ThemeToggle theme={theme} onCycle={cycleTheme} />

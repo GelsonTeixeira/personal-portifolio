@@ -21,6 +21,7 @@
   border: 0px;
   margin: 0px;
   box-sizing: border-box;
+  transition: background-color 2s ease, color 2s ease, border-color 2s ease, box-shadow 2s ease, filter 2s ease;
 }
 html,
 body {
