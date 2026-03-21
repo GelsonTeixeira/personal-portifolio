@@ -10,7 +10,7 @@ function HireMe() {
     setStatus('sending')
 
     const formData = new FormData(e.target)
-    formData.append('access_key', '0c76ab26-be5e-4f96-9019-25c1070ff426')
+    formData.append('access_key', import.meta.env.VITE_WEB3FORMS_KEY || '0c76ab26-be5e-4f96-9019-25c1070ff426')
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
