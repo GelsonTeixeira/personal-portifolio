@@ -36,6 +36,17 @@ body {
   --button-text: #000000;
 }
 
+[data-theme="terminal"] {
+  --background-color: #0a0a0a;
+  --text-color: #00ff41;
+  --button-bg: transparent;
+  --button-text: #00ff41;
+  --secondary-text: #00cc33;
+  --nav-color: #0a0a0a;
+  --card-color: #0f0f0f;
+  --secondary-color: #007a1f;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -65,6 +76,15 @@ button {
 [data-theme="dark"] .container_img_tecks img {
     filter: none;
   }
+
+[data-theme="terminal"] .container_content{
+  background-color: #0f0f0f;
+  color: #00cc33;
+}
+
+[data-theme="terminal"] .container_img_tecks img {
+  filter: brightness(0) invert(1) sepia(1) saturate(50) hue-rotate(90deg);
+}
 
   
 

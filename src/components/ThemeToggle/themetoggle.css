@@ -1,0 +1,37 @@
+.theme-toggle-btn {
+  background: transparent;
+  border: 1px solid var(--secondary-color, #8a91a0);
+  color: var(--text-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.theme-toggle-btn:hover {
+  border-color: #ff8660;
+  background: rgba(255, 134, 96, 0.05);
+  cursor: url("../../assets/Mover.svg"), auto;
+}
+
+/* Terminal mode */
+.theme-toggle-terminal {
+  font-family: monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  border-color: #00ff41;
+  color: #00ff41;
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.3), inset 0 0 10px rgba(0, 255, 65, 0.3);
+}
+
+.theme-toggle-terminal:hover {
+  border-color: #00ff41;
+  background: rgba(0, 255, 65, 0.07);
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3), inset 0 0 20px rgba(0, 255, 65, 0.3);
+}

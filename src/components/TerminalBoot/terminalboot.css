@@ -1,0 +1,68 @@
+.terminal-overlay {
+  position: fixed;
+  inset: 0;
+  background: #0a0a0a;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terminal-fading {
+  animation: terminalFadeOut 0.8s ease forwards;
+}
+
+@keyframes terminalFadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+.terminal-screen {
+  width: min(600px, 90vw);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: #00ff41;
+  padding: 2rem;
+  border: 1px solid rgba(0, 255, 65, 0.3);
+  border-radius: 4px;
+  background: #050505;
+  box-shadow: 0 0 40px rgba(0, 255, 65, 0.15);
+}
+
+.terminal-header-text {
+  font-size: 12px;
+  color: #007a1f;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+}
+
+.terminal-divider {
+  border-bottom: 1px solid rgba(0, 255, 65, 0.2);
+  margin-bottom: 1rem;
+}
+
+.terminal-line {
+  line-height: 1.8;
+  color: #00cc33;
+  font-weight: 400;
+}
+
+.terminal-highlight {
+  color: #00ff41;
+  font-weight: 700;
+}
+
+.terminal-cursor-block {
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  background: #00ff41;
+  vertical-align: middle;
+  margin-left: 4px;
+  animation: terminalCursorBlink 1s step-end infinite;
+}
+
+@keyframes terminalCursorBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}

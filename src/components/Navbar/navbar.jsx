@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import Logo from "../Logo/logo";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
-function Navbar({ theme, toggleTheme }) {
+function Navbar({ theme, cycleTheme }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -15,7 +16,7 @@ function Navbar({ theme, toggleTheme }) {
       <div>
         <Logo theme={theme} />
       <button className="menu-toggle" onClick={toggleMenu}>
-        ☰
+        &#9776;
       </button>
       </div>
       <nav className={isMenuOpen ? "open" : ""}>
@@ -33,9 +34,7 @@ function Navbar({ theme, toggleTheme }) {
             <Link to="/hireme">Hire Me</Link>
           </li>
           <li>
-            <button className="theme-toggle" onClick={toggleTheme}>
-              {theme === "light" ? "🌙" : "☀️"}
-            </button>
+            <ThemeToggle theme={theme} onCycle={cycleTheme} />
           </li>
         </ol>
       </nav>
